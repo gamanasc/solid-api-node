@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
-  },
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
